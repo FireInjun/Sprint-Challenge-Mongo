@@ -27,12 +27,19 @@ router
         res.status(201).json(addedBud);
       })
       .catch(err => {
+<<<<<<< HEAD
         res
           .status(422)
           .json({
             errorMessage:
               "Do what now? This aint workin, you sure you usin this right?"
           });
+=======
+        res.status(422).json({
+          errorMessage:
+            "Do what now? This aint workin, you sure you usin this right?"
+        });
+>>>>>>> d507e83f45d75658ee9006b84d04f22428ebe456
       });
   });
 
@@ -59,11 +66,17 @@ router
         res.json(budget);
       })
       .catch(err => {
+<<<<<<< HEAD
         res
           .status(500)
           .json({
             status: "I aint gonna be able to update what aint here buddy!"
           });
+=======
+        res.status(500).json({
+          status: "I aint gonna be able to update what aint here buddy!"
+        });
+>>>>>>> d507e83f45d75658ee9006b84d04f22428ebe456
       });
   })
 
@@ -75,12 +88,19 @@ router
         res.json(budgetRemoved);
       })
       .catch(err => {
+<<<<<<< HEAD
         res
           .status(500)
           .json({
             status:
               "That budget aint here buddy. Check your bank account to make sure you still have money!"
           });
+=======
+        res.status(500).json({
+          status:
+            "That budget aint here buddy. Check your bank account to make sure you still have money!"
+        });
+>>>>>>> d507e83f45d75658ee9006b84d04f22428ebe456
       });
   });
 module.exports = router;
